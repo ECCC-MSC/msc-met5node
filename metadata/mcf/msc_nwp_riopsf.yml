@@ -7,7 +7,7 @@ mcf:
 metadata:
     charset: utf8
     hierarchylevel: dataset
-    identifier: urn:wmo:md:${MET5_CENTRE_ID}:ocean:medium-range:nwp.riops
+    identifier: urn:wmo:md:${WIS2_CENTRE_ID}:ocean:medium-range:nwp.riops
     language: en
     datestamp: $date$
   
@@ -57,9 +57,9 @@ identification:
 distribution:
     mqtt:
         url: mqtts://met5node.weather.gc.ca:8883
-        type: application/json
-        rel: canonical
+        type: application/geo+json
+        rel: items
         name: notifications
         description: description in English
-        channel: origin/a/met5/${MET5_CENTRE_ID}/data/recommended/ocean/prediction/forecast/medium-range/deterministic/limited-area/
+        channel: origin/a/met5/${WIS2_CENTRE_ID}/data/recommended/ocean/prediction/forecast/medium-range/deterministic/limited-area/
         function: download
