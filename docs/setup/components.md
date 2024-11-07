@@ -25,7 +25,7 @@ sudo apt install make git vim unzip nginx apache2-utils -y
 # install Docker as per https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 # update Docker group privileges as per https://docs.docker.com/engine/install/linux-postinstall
 # setup HTTPS basic auth
-sudo htpasswd -c /home/ubuntu/msc-met5node/htpasswd met5user
+sudo htpasswd -c /etd/nginx/htpasswd met5user
 ```
 
 #### Certificates
@@ -51,7 +51,7 @@ server {
         location / {
                 proxy_pass http://localhost:5001/;
                 auth_basic "MET5 user";
-                auth_basic_user_file /home/ubuntu/msc-met5node/htpasswd;
+                auth_basic_user_file /etc/nginx/htpasswd;
         }
 
         proxy_set_header Host $host;
