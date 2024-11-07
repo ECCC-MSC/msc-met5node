@@ -1,5 +1,5 @@
 
-base_mcf: /share/contact-main.yml
+base_mcf: share/contact-main.yml
 
 mcf:
     version: 1.0
