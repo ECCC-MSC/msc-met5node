@@ -1,4 +1,7 @@
-## Discovery Catalogue deployment
+# MET5 Node component setup
+
+## 
+## Discovery Catalogue and Broker deployment
 
 ### Overview
 
@@ -146,4 +149,6 @@ At this point the wis2-gdc can be started as follows by running the `Makefile` s
 make up
 ```
 
-The wis2-gdc should then be available at https://met5node.weather.gc.ca
+The catalogue should then be available at https://met5node.weather.gc.ca
+
+The broker should then be available at mqtts://met5node.weather.gc.ca:8883
