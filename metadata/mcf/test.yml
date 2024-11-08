@@ -34,7 +34,7 @@ identification:
             keywords_type: theme
             vocabulary:
                 name: Earth system disciplines as defined by the WMO Unified Data Policy, Resolution 1 (Cg-Ext(2021), Annex 1.
-                url: https://codes.wmo.int/topic-hierarchy/earth-system-discipline
+                url: https://codes.wmo.int/wis/topic-hierarchy/earth-system-discipline
     extents:
         spatial:
             - bbox: [-140.80, 41.83, -52.60, 82.50]
@@ -53,5 +53,5 @@ distribution:
         rel: canonical
         name: notifications
         description: description in English
-        channel: origin/a/wis2/${WIS2_CENTRE_ID}/data/core/surface-weather-observations/synop
+        channel: origin/a/wis2/${WIS2_CENTRE_ID}/data/core/weather/surface-based-observations/synop
         function: download
