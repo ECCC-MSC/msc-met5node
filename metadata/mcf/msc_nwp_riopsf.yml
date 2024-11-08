@@ -61,7 +61,7 @@ distribution:
         rel: items
         name: notifications
         description: data notifications
-        channel: origin/a/met5/${WIS2_CENTRE_ID}/data/recommended/ocean/prediction/forecast/medium-range/deterministic/limited-area
+        channel: origin/a/met5/${WIS2_CENTRE_ID}/data/recommended/ocean
         function: download
     license:
         url: https://eccc-msc.github.io/open-data/licence/readme_en
@@ -69,4 +69,4 @@ distribution:
         rel: license
         name: license
         description: license in English
-        channel: origin/a/met5/${WIS2_CENTRE_ID}/data/recommended/ocean/prediction/forecast/medium-range/deterministic/limited-area
+        channel: origin/a/met5/${WIS2_CENTRE_ID}/data/recommended/ocean
