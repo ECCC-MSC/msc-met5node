@@ -7,7 +7,7 @@ mcf:
 metadata:
     charset: utf8
     hierarchylevel: dataset
-    identifier: urn:wmo:md:${WIS2_CENTRE_ID}:ocean:medium-range:nwp.riops
+    identifier: urn:wmo:md:${WIS2_CENTRE_ID}:ocean:medium-range:nwp.riopsf
     language: en
     datestamp: $date$
   
@@ -42,12 +42,11 @@ identification:
                 url: https://codes.wmo.int/wis/topic-hierarchy/earth-system-discipline
     extents:
         spatial:
-            # old bbox: [-138.7,30.5,20.9,41.4]
-            # bbox manually estimated with QGis, extent covers the north pole
-            - bbox: [-180, 28.896, 180, 90]
+            #grabbed from gdalinfo
+            - bbox: [-180, 28.894714, 180, 90]
               crs: 4326
-            - bbox: [-2500.000, -2500.000, 8847500.000, 8047500.000]
-              proj4: "+proj=stere +lat_0=90 +lon_0=-100 +k=0.93301243 +x_0=4245000 +y_0=5295000 +R=6371229 +units=m +no_defs"
+            - bbox: [-4247492.221, -5297782.136,  4602507.779, 2752217.864]
+              proj4: '+proj=stere +lat_0=90 +lat_ts=60 +lon_0=260 +x_0=0 +y_0=0 +R=6371229 +units=m +no_defs'
         temporal:
             - begin: 2016-06-21
               end: null
