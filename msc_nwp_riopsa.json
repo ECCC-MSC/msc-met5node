@@ -1,5 +1,5 @@
 {
-    "id": "urn:wmo:md:ca-eccc-msc:surface-weather-observations",
+    "id": "urn:wmo:md:ca-eccc-msc:ocean:medium-range:nwp.riopsa",
     "conformsTo": [
         "http://wis.wmo.int/spec/wcmp/2/conf/core"
     ],
@@ -9,36 +9,36 @@
         "coordinates": [
             [
                 [
-                    -140.8,
-                    41.83
+                    -180,
+                    28.894714
                 ],
                 [
-                    -140.8,
-                    82.5
+                    -180,
+                    90
                 ],
                 [
-                    -52.6,
-                    82.5
+                    180,
+                    90
                 ],
                 [
-                    -52.6,
-                    41.83
+                    180,
+                    28.894714
                 ],
                 [
-                    -140.8,
-                    41.83
+                    -180,
+                    28.894714
                 ]
             ]
         ]
     },
     "properties": {
-        "title": "Surface weather observations from Canada, test2",
-        "description": "Surface weather observations from Canada",
+        "title": "Regional Ice-Ocean Prediction System",
+        "description": "The Regional Ice Ocean Prediction System (RIOPS) provides ice and ocean forecasts up to 84 hours, four times per day on a 1/12° resolution grid (3-8 km). RIOPS is initialized using analyses from the Global Ice-Ocean Prediction System (GIOPS). Atmospheric fluxes up to 84 hours forecasts are calculated using fields from a component of the Global Deterministic Prediction System (GDPS) at 10km horizontal resolution. RIOPS is based on the NEMO-CICE ice-ocean model and produces regional sea ice and ocean analyses and 2 day forecasts daily based at [00, 06, 12, 18] UTC. RIOPS includes a 3DVar ice concentration analysis (assimilating sattelite remote sensing and Canadian Ice Service ice charts) while the large scales of the ocean analysis are constrained by spectrally nudging the temperature and salinity fields to those of the CCMEP Global Ice Ocean Prediction System (which itself includes a full multivariate assimilation system that combines satellite observations with in situ observations).",
         "themes": [
             {
                 "concepts": [
                     {
-                        "id": "weather"
+                        "id": "ocean"
                     }
                 ],
                 "scheme": "https://codes.wmo.int/wis/topic-hierarchy/earth-system-discipline"
@@ -48,7 +48,7 @@
             "code": "en"
         },
         "type": "dataset",
-        "created": "2024-02-08T00:00:00Z",
+        "created": "2018-01-29T00:00:00Z",
         "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
         "contacts": [
             {
@@ -87,26 +87,27 @@
             }
         ],
         "keywords": [
-            "surface weather",
-            "temperature",
-            "observations"
+            "sea ice-ocean analysis",
+            "prediction",
+            "regional"
         ],
-        "wmo:dataPolicy": "core"
+        "wmo:dataPolicy": "recommended"
     },
     "links": [
         {
-            "href": "mqtts://a2ea81cfe2b44453992b427ed2abe9cd.s2.eu.hivemq.cloud:8883",
-            "type": "application/json",
-            "rel": "canonical",
+            "href": "mqtts://met5node.weather.gc.ca:8883",
+            "type": "application/geo+json",
+            "rel": "items",
             "title": "notifications",
-            "channel": "origin/a/wis2/ca-eccc-msc/data/core/weather/surface-based-observations/synop"
+            "channel": "origin/a/wis2/ca-eccc-msc/data/recommended/ocean/experimental/analysis/short-range/deterministic/limited-area"
+        },
+        {
+            "href": "https://eccc-msc.github.io/open-data/licence/readme_en",
+            "type": "application/geo+json",
+            "rel": "license",
+            "title": "license",
+            "channel": "origin/a/wis2/ca-eccc-msc/data/recommended/ocean/experimental/analysis/short-range/deterministic/limited-area"
         }
     ],
-    "time": {
-        "interval": [
-            "1840-01-01",
-            ".."
-        ],
-        "resolution": "P1H"
-    }
+    "time": null
 }
