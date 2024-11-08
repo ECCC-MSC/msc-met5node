@@ -36,5 +36,5 @@ jobs:
         for i in metadata/mcf/*.yml; do pygeometa metadata generate --schema wmo-wcmp2 $i --output /tmp/wcmp2-records/`basename ${i%.yml}.json`; done
     - name: Validate WCMP2 records
       run: |
-        for i in /tmp/wcmp2-records/*.json; do pywcmp ets validate $i; done
+        for i in /tmp/wcmp2-records/*.json; do cat $i && pywcmp ets validate $i; done
 
