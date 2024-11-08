@@ -7,7 +7,7 @@ mcf:
 metadata:
     charset: utf8
     hierarchylevel: dataset
-    identifier: urn:wmo:md:${WIS2_CENTRE_ID}:ocean:medium-range:nwp.riopsf
+    identifier: urn:wmo:md:${WIS2_CENTRE_ID}:ocean:medium-range:nwp.riopsa
     language: en
     datestamp: $date$
   
@@ -29,7 +29,7 @@ identification:
     keywords:
         default:
             keywords:
-                - sea ice-ocean forecast
+                - sea ice-ocean analysis
                 - prediction
                 - regional
         # Amongst the possible values from WMO WIS2 Topic Hierarchy: 'weather', 'climate', 'hydrology', 'atmospheric-composition', 'cryosphere', 'ocean' or 'space-weather'
@@ -47,10 +47,6 @@ identification:
               crs: 4326
             - bbox: [-4247492.221, -5297782.136,  4602507.779, 2752217.864]
               proj4: '+proj=stere +lat_0=90 +lat_ts=60 +lon_0=260 +x_0=0 +y_0=0 +R=6371229 +units=m +no_defs'
-        temporal:
-            - begin: 2016-06-21
-              end: null
-              resolution: P3H
     url: https://met5node.weather.gc.ca/catalogue
 
 distribution:
@@ -61,7 +57,7 @@ distribution:
         name: notifications
         description: data notifications
         #matching weather stucture, anything outside experimental is stict checked
-        channel: origin/a/wis2/${WIS2_CENTRE_ID}/data/recommended/ocean/experimental/forecast/medium-range/deterministic/limited-area
+        channel: origin/a/wis2/${WIS2_CENTRE_ID}/data/recommended/ocean/experimental/analysis/short-range/deterministic/limited-area
         function: download
     license:
         url: https://eccc-msc.github.io/open-data/licence/readme_en
@@ -69,4 +65,4 @@ distribution:
         rel: license
         name: license
         description: license in English
-        channel: origin/a/wis2/${WIS2_CENTRE_ID}/data/recommended/ocean/experimental/forecast/medium-range/deterministic/limited-area
+        channel: origin/a/wis2/${WIS2_CENTRE_ID}/data/recommended/ocean/experimental/analysis/short-range/deterministic/limited-area
