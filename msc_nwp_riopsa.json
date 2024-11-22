@@ -112,7 +112,7 @@
             "href": "https://met5node.weather.gc.ca/stac/met5-data-share/origin/a/wis2/ca-eccc-msc/data/recommended/ocean/experimental/analysis/short-range/deterministic/limited-area",
             "type": "application/json",
             "rel": "collection",
-            "title": "OGC API PyGeoAPI STAC"
+            "title": "STAC Catalog"
         }
     ],
     "time": null
