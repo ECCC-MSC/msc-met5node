@@ -74,7 +74,7 @@ distribution:
         url: https://met5node.weather.gc.ca/stac/met5-data-share/origin/a/wis2/${WIS2_CENTRE_ID}/data/recommended/ocean/experimental/forecast/medium-range/deterministic/limited-area
         type: application/json
         rel: collection
-        name: OGC API PyGeoAPI STAC
+        name: STAC Catalog
         security:
             default:
                 type: basic
