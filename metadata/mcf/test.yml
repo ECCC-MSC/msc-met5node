@@ -48,8 +48,8 @@ identification:
 
 distribution:
     mqtt:
-        url: mqtts://a2ea81cfe2b44453992b427ed2abe9cd.s2.eu.hivemq.cloud:8883
-        type: application/json
+        url: mqtts://met5node.weather.gc.ca:8883
+        type: application/geo+json
         rel: canonical
         name: notifications
         description: description in English
