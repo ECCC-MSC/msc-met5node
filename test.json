@@ -95,8 +95,8 @@
     },
     "links": [
         {
-            "href": "mqtts://a2ea81cfe2b44453992b427ed2abe9cd.s2.eu.hivemq.cloud:8883",
-            "type": "application/json",
+            "href": "mqtts://met5node.weather.gc.ca:8883",
+            "type": "application/geo+json",
             "rel": "canonical",
             "title": "notifications",
             "channel": "origin/a/wis2/ca-eccc-msc/data/core/weather/surface-based-observations/synop"
