@@ -32,7 +32,7 @@
         ]
     },
     "properties": {
-        "title": "Regional Ice-Ocean Prediction System",
+        "title": "Regional Ice-Ocean Prediction System Analysis",
         "description": "The Regional Ice Ocean Prediction System (RIOPS) provides ice and ocean forecasts up to 84 hours, four times per day on a 1/12° resolution grid (3-8 km). RIOPS is initialized using analyses from the Global Ice-Ocean Prediction System (GIOPS). Atmospheric fluxes up to 84 hours forecasts are calculated using fields from a component of the Global Deterministic Prediction System (GDPS) at 10km horizontal resolution. RIOPS is based on the NEMO-CICE ice-ocean model and produces regional sea ice and ocean analyses and 2 day forecasts daily based at [00, 06, 12, 18] UTC. RIOPS includes a 3DVar ice concentration analysis (assimilating sattelite remote sensing and Canadian Ice Service ice charts) while the large scales of the ocean analysis are constrained by spectrally nudging the temperature and salinity fields to those of the CCMEP Global Ice Ocean Prediction System (which itself includes a full multivariate assimilation system that combines satellite observations with in situ observations).",
         "themes": [
             {
