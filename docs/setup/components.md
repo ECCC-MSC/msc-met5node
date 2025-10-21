@@ -41,8 +41,8 @@ server {
         listen 443 ssl default_server;
         listen [::]:443 ssl default_server;
 
-        ssl_certificate /home/ubuntu/msc-met5node/wildcard.weather.gc.ca_nginx_public.crt_expires_20250519.txt;
-        ssl_certificate_key /home/ubuntu/msc-met5node/wildcard.weather.gc.ca_private.key_expires_20250519;
+        ssl_certificate /home/ubuntu/msc-met5node/expires_20260523/wildcard.weather.gc.ca_nginx_public.crt_expires_20260523.txt;
+        ssl_certificate_key /home/ubuntu/msc-met5node/expires_20260523/wildcard.weather.gc.ca_private.key_expires_20260523;
 
         root /var/www/html;
 
@@ -74,8 +74,8 @@ stream {
                 server 127.0.0.1:1883 fail_timeout=1s max_fails=1;
         }
         server {
-                ssl_certificate /home/ubuntu/msc-met5node/wildcard.weather.gc.ca_nginx_public.crt_expires_20250519.txt;
-                ssl_certificate_key /home/ubuntu/msc-met5node/wildcard.weather.gc.ca_private.key_expires_20250519;
+                ssl_certificate /home/ubuntu/msc-met5node/expires_20260523/wildcard.weather.gc.ca_nginx_public.crt_expires_20260523.txt;
+                ssl_certificate_key /home/ubuntu/msc-met5node/expires_20260523/wildcard.weather.gc.ca_private.key_expires_20260523;
                 ssl_protocols TLSv1.2;
                 listen 8883 ssl;
                 proxy_pass broker;
