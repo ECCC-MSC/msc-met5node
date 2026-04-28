@@ -44,10 +44,10 @@
                 "scheme": "https://codes.wmo.int/wis/topic-hierarchy/earth-system-discipline"
             }
         ],
+        "type": "dataset",
         "language": {
             "code": "en"
         },
-        "type": "dataset",
         "created": "2018-01-29T00:00:00Z",
         "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
         "contacts": [
@@ -115,5 +115,6 @@
             "title": "STAC Catalog"
         }
     ],
-    "time": null
+    "time": null,
+    "generated_by": "pygeometa 0.21.1"
 }
