@@ -2,14 +2,15 @@
 base_mcf: share/contact-main.yml
 
 mcf:
-    version: 1.0
+    version: 2.0
 
 metadata:
     identifier: urn:wmo:md:${WIS2_CENTRE_ID}:surface-weather-observations
     hierarchylevel: dataset
     language: en
     charset: utf8
-    datestamp: 2024-02-08
+    dates:
+        creation: 2024-02-08
 
 spatial:
     datatype: vector
@@ -20,8 +21,6 @@ identification:
     abstract: Surface weather observations from Canada
     rights: Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))
     status: operational
-    dates:
-        creation: 2024-02-08
     keywords:
         default:
             keywords:
@@ -42,7 +41,7 @@ identification:
         temporal:
             - begin: 1840-01-01
               end: null
-              resolution: P1H
+              resolution: PT1H
     url: https://eccc-msc.github.io/open-data/msc-data/obs_station/readme_obs_insitu_en
     wmo_data_policy: core
 
