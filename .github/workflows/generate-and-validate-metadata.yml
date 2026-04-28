@@ -10,10 +10,10 @@ on:
 
 jobs:
   main:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
-        python-version: ['3.10']
+        python-version: ['3.12']
     steps:
     - uses: actions/checkout@master
     - uses: actions/setup-python@v5
@@ -23,8 +23,7 @@ jobs:
     - name: Install requirements
       run: |
         python3 -m pip install --upgrade pip
-        pip3 install https://github.com/geopython/pygeometa/archive/master.zip
-        pip3 install https://github.com/wmo-im/pywcmp/archive/master.zip
+        pip3 install pygeometa pywcmp
     - name: Cache WCMP2 schemas for validation
       run: |
         pywcmp bundle sync
